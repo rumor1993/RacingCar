@@ -1,13 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="StringCalculatorTest" tests="1" skipped="0" failures="1" errors="0" timestamp="2022-01-06T16:08:02" hostname="rumor1993ui-iMac.local" time="0.016">
+<testsuite name="StringCalculatorTest" tests="1" skipped="0" failures="1" errors="0" timestamp="2022-01-07T00:51:34" hostname="rumor1993.local" time="0.045">
   <properties/>
-  <testcase name="case4()" classname="StringCalculatorTest" time="0.016">
-    <failure message="java.lang.NumberFormatException: For input string: &quot;\n123&quot;" type="java.lang.NumberFormatException">java.lang.NumberFormatException: For input string: &quot;\n123&quot;
-	at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
-	at java.base/java.lang.Integer.parseInt(Integer.java:652)
-	at java.base/java.lang.Integer.parseInt(Integer.java:770)
-	at StringChecker.check(StringChecker.java:13)
-	at StringCalculatorTest.case4(StringCalculatorTest.java:50)
+  <testcase name="case4()" classname="StringCalculatorTest" time="0.045">
+    <failure message="java.lang.AssertionError: &#10;Expecting code to raise a throwable." type="java.lang.AssertionError">java.lang.AssertionError: 
+Expecting code to raise a throwable.
+	at StringCalculatorTest.case4(StringCalculatorTest.java:54)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)

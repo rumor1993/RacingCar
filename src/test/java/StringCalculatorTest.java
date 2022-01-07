@@ -48,10 +48,9 @@ class StringCalculatorTest {
         String value = "//;\\n1;2;3";
         StringChecker stringChecker = new StringChecker();
         String check = stringChecker.check(value);
+        assertThat(Integer.parseInt(check)).isEqualTo(123);
 
-        System.out.println("check = " + check);
-
-        assertThat(Integer.parseInt(check)).isInstanceOf(Integer.TYPE);
-
+//        String value2 = "//;\\n1;2;3f";
+//        assertThatThrownBy(() -> { stringChecker.check(value);; }).isInstanceOf(RuntimeException.class);
     }
 }

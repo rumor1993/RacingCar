@@ -4,10 +4,11 @@ public class StringChecker {
     public String check(String value) {
         SeparatorFinder separatorFinder = new SeparatorFinder();
         value = value.replaceAll(separatorFinder.findSeparator(value), "");
-        value = value.replaceAll("//", "");
-        value = value.replaceAll("\n", "");
+        value = value.replaceAll("(\\/\\/)(.*?)(\\\\n)", "");
         value = value.replaceAll(";", "");
         value = value.replaceAll(",", "");
+
+        // "(\\/\\/)(.*?)(\\\\n)"
 
         try {
             Integer.parseInt(value);
